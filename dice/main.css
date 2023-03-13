@@ -1,0 +1,99 @@
+  /* fonts */
+
+  @font-face {
+    font-family: 'FirstOrder';
+    src: url('fonts/first_order/firstorder.ttf') format('truetype');
+}
+
+:root 
+
+{
+    --main-bg-color: #0f0f0f;
+    --main-text-color:#ccc;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:var(--main-bg-color);
+    color: var(--main-text-color);
+}
+.dice-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    
+    
+  }
+  
+  .dice {
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: var(--main-bg-color);
+    box-shadow:  10px 10px 20px #070707,
+                 -10px -10px 20px #171717;
+  }
+  
+  .result {
+    font-size: 48px;
+    margin: 10px 0;
+  }
+  .title_dice {
+    text-align: center;
+    font-family: 'FirstOrder', sans-serif;
+  }
+  button {
+    margin: 12px;
+    height: 50px;
+    width: 80px;
+    border-radius: 10px;
+    background: #333;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 5px 5px 10px #333, inset -5px -5px 20px #222;
+    border: none;
+    font-size: 0.8rem;
+    color: #ccc;
+    transition: 500ms;
+  }
+  
+  button:hover {
+    box-shadow:  inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+    color: #ccc;
+    transition: 250ms;
+  }
+  button:active {
+    box-shadow:  inset 7px 7px 12px #222, inset -10px -10px 10px #444;
+    color: #999999;
+  }
+
+  .choice-buttons{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .choice-buttons button {
+    width: 70px;
+  }
+  
+  
+
+
+  .subtitle{
+    flex-direction: column;
+
+  }
+
+
+  .gold {
+    color: gold;
+    font-weight:bolder;
+    border-radius: 10px;
+    text-shadow: #ccc 1px 0 10px;;
+  }

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="main.css">
+    <title>Dice Roller</title>
+  </head>
+  <body>
+    <h1 class="title_dice">Dice Roller</h1>
+<div>
+    <div class="choices-container">
+        
+    <div class="dice">
+        <div  class="subtitle">
+        <h2>Choose your dice</h2>
+        </div>
+        <div class="choice-buttons">
+            <button>d2</button>
+            <button>d3</button>
+            <button>d4</button>
+            <button>d6</button>
+            <button>d8</button>
+            <button>d10</button>
+            <button>d12</button>
+            <button>d20</button>
+            <button>d100</button>
+        </div>
+       </div>
+    </div>
+    <button onclick="clearResult()">Clear all results</button>
+    <div class="dice-container">
+        <div class="dice">
+            <p>Rolling a d2:</p>
+            <p class="result" id="result-d2">-</p>
+            <button data-sides="2" onclick="rollDice(2)">Roll</button>
+            <label for="modifier">Modifier:</label>
+            <input type="number" id="modifier-d2" value="0">
+            <p>Total:</p>
+            <p class="result-total" id="result-d2-total">-</p>
+        </div>
+        <div class="dice">
+            <p>Rolling a d4:</p>
+            <p class="result" id="result-d4">-</p>
+            <button data-sides="4" onclick="rollDice(4)">Roll</button>
+            <label for="modifier">Modifier:</label>
+            <input type="number" id="modifier-d4" value="0">
+            <p>Total:</p>
+            <p class="result-total" id="result-d4-total">-</p>
+          </div>
+      <div class="dice">
+        <p>Rolling a d6:</p>
+        <p class="result" id="result-d6">-</p>
+        <button data-sides="6" onclick="rollDice(6)">Roll</button>
+        <label for="modifier">Modifier:</label>
+        <input type="number" id="modifier-d6" value="0">
+        <p>Total:</p>
+        <p class="result-total" id="result-d6-total">-</p>
+      </div>
+      <div class="dice">
+        <p>Rolling a d8:</p>
+        <p class="result" id="result-d8">-</p>
+        <button data-sides="8" onclick="rollDice(8)">Roll</button>
+        <label for="modifier">Modifier:</label>
+        <input type="number" id="modifier-d8" value="0">
+        <p>Total:</p>
+        <p class="result-total" id="result-d8-total">-</p>
+      </div>
+      <div class="dice">
+        <p>Rolling a d10:</p>
+        <p class="result" id="result-d10">-</p>
+        <button data-sides="10" onclick="rollDice(10)">Roll</button>
+        <label for="modifier">Modifier:</label>
+        <input type="number" id="modifier-d10" value="0">
+        <p>Total:</p>
+        <p class="result-total" id="result-d10-total">-</p>
+      </div>
+      <div class="dice">
+        <p>Rolling a d20:</p>
+        <p class="result" id="result-d20">-</p>
+        <button data-sides="20" onclick="rollDice(20)">Roll</button>
+        <label for="modifier">Modifier:</label>
+        <input type="number" id="modifier-d20" value="0">
+        <p>Total:</p>
+        <p class="result-total" id="result-d20-total">-</p>
+      </div>      
+      <div class="dice">
+        <p>Rolling a d100:</p>
+        <p class="result" id="result-d100">-</p>
+        <button data-sides="100" onclick="rollDice(100)">Roll</button>
+        <label for="modifier">Modifier:</label>
+        <input type="number" id="modifier-d100" value="0">
+        <p>Total:</p>
+        <p class="result-total" id="result-d100-total">-</p>
+      </div>
+      
+    </div>
+</div>
+    <script src="app.js"></script>
+  </body>
+</html>
