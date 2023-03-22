@@ -46,7 +46,3 @@ function easeOutQuart(x) {
       resultTotalElements[i].innerHTML = "-";
     }
   }
-  
-
-  //TODO - add modifier total. 
-  
